@@ -17,7 +17,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>Lawcery</title>
+  <title>随笔1 | Lawcery</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -59,7 +59,7 @@
 </head>
 
 <!--
-<body class="home-template">
+<body class="post-template">
 -->
 <body id="index" class="lightnav animsition">
 
@@ -158,128 +158,23 @@
         <!-- ============================ Header & Logo bar =========================== -->
 
 
-      <!-- ============================ Hero Image =========================== -->
-
-<section id="hero" class="scrollme">
-    <div class="container-fluid element-img" style="background: url(/img/bgOnly.jpg) no-repeat center center fixed;background-size: cover">
-        <div class="row">
-            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 vertical-align cover boost text-center">
-                <div class="center-me animateme" data-when="exit" data-from="0" data-to="0.6" data-opacity="0" data-translatey="100">
-                    <div>
-                        
-                        <h2><p style="color:#fff">Every day that never dances is a failure to live up to.</p></h2>
-                        <p></p>
-                        
-                        <h2></h2>
-                        <p><p style="color:#fff">每一个不曾起舞的日子都是对生命的辜负。</p></p>
-                        
-
-                    </div>
-                </div>
-            </div>
-            <!-- // .col-md-12 -->
-        </div>
-        <div class="herofade beige-dk"></div>
-    </div>
-</section>
-
-<!-- Height spacing helper -->
-<div class="heightblock"></div>
-<!-- // End height spacing helper -->
-
-<!-- ============================ END Hero Image =========================== -->
-<!-- ============================ Content =========================== -->
-
+      
 <section id="intro">
     <div class="container">
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-4">
-                    <h3><a href="/2018/03/15/lawcery1/">前端面试题总结</a></h3>
-                    <span>
-                        <span class="post-meta">
-      <time datetime="2018-03-15T01:49:16.000Z" itemprop="datePublished">
-          2018-03-15
-      </time>
-    
-</span>
-                    </span>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                      
-                        html、css1.css盒模型
-内容(content)、填充(padding)、边框(border)、边界(margin)
-2.介绍一下Box-sizing的几个属性值，默认是哪个？
-Content-box（默认）：border和padding不计入在width之内
-Padding-box, padding计入在width之内
-Border-box， border和padding计入在width之内，其实就是怪异模式（IE下呈现的是怪
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2018/03/15/lawcery1/">Read More...</a>
-                    </p>
-                    
-                </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-4">
-                    <h3><a href="/2018/03/06/跨域问题/">跨域问题</a></h3>
-                    <span>
-                        <span class="post-meta">
-      <time datetime="2018-03-06T11:26:10.000Z" itemprop="datePublished">
-          2018-03-06
-      </time>
-    
-</span>
-                    </span>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                      
-                        在开发过程中，发请求携带cookie跨域的问题，我用的fetch请求，总结如下：    1.携带cookie    2.跨域
-前端设置 credentials=&quot;include&quot;（允许跨域和携带cookie）;
-后端设置如下：
-    // 先获取请求来源origin, 给Access-Control-Allow-Origin动态赋值
-    response.setHeader(&apos;Access-Contr
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2018/03/06/跨域问题/">Read More...</a>
-                    </p>
-                    
-                </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-4">
-                    <h3><a href="/2018/03/06/随笔1/">随笔1</a></h3>
-                    <span>
-                        <span class="post-meta">
+        <div class="row col-md-offset-2">
+            <div class="col-md-8">
+    			<span class="post-meta">
       <time datetime="2018-03-06T06:03:58.000Z" itemprop="datePublished">
           2018-03-06
       </time>
     
 </span>
-                    </span>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                      
-                        1.如何牢记call和apply的区别?
-apply 是 a 开头,所以参数是数组(arr);
+                <h1>随笔1</h1>
+            </div>
+        </div>
+        <div class="col-md-8 col-md-offset-2">
+      		<p>1.如何牢记call和apply的区别?</p>
+<pre><code>apply 是 a 开头,所以参数是数组(arr);
 call 是 c 开头,所以参数是逗号隔开(comma);
 
 function add(a, b) {
@@ -288,35 +183,119 @@ function add(a, b) {
 
 console.log(add.call(null, 1, 2)); // 3
 console.log(add.apply(null, [1, 2])); // 3
-2.数组去重方法
-var arr =
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2018/03/06/随笔1/">Read More...</a>
-                    </p>
-                    
-                </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
-            </div>
+</code></pre><p>2.数组去重方法</p>
+<pre><code>var arr = [1,2,3,4,2,2,1,&apos;abc&apos;,6,&apos;abc&apos;];
+a. [...new Set(arr)]
+b. function duplicate(arr) {
+        var dupArr = []
+        for(var i = 0; i &lt; arr.length; i++) {
+            if(dupArr.indexOf(arr[i]) === -1) dupArr.push(arr[i])
+        }
+        return dupArr
+    }
+
+    duplicate(arr)
+</code></pre><p>3.实现一个快速排序和冒泡排序? 谁的速度更快?</p>
+<pre><code>a. 冒泡排序(速度更快一些)
+var arr1 = [2, 40, 1, 6, 25, 37,16, 32];
+
+function sort1(arr) {
+    console.time(&apos;bubble1&apos;)  //开始计算
+    for(var i = 0; i &lt; arr.length; i++){
+        for(var j = 0; j &lt; arr.length - i - 1; j++) {
+            if (arr[j] &gt; arr[j+1] ){
+             let a = arr[j]
+             arr[j] = arr[j+1]
+             arr[j+1] = a
+            }
+       }
+    }
+  console.timeEnd(&apos;bubble1&apos;)  //执行时间
+  return arr
+}
+
+b.快速排序
+ var arr =  [2, 40, 1, 6, 25, 37,16, 32]
+
+ function quickSort(arr) {
+     console.time(&apos;bubble&apos;);
+     if(arr.length &lt;= 1) { return arr }
+
+     let middleIndex = Math.floor(arr.length / 2);
+     let middleValue = arr.splice(middleIndex, 1)[0];
+     let left = [] , right = [];
+
+     for(var i = 0;i&lt;arr.length;i++) {
+         if(arr[i] &lt;= middleValue){
+            left.push(arr[i]);
+         } else {
+            right.push(arr[i]);
+         }
+     }
+     console.timeEnd(&apos;bubble&apos;);
+     return quickSort(left).concat([middleValue], quickSort(right))
+ }
+ quickSort(arr)
+</code></pre><p>4.截取地址栏参数</p>
+<pre><code>var url = &apos;www.baidu.com?token=123&amp;a=1&amp;b=2&apos;;
+
+url = url.split(&apos;?&apos;)[1];   //  &quot;token=1231&amp;a=1&amp;b=2&quot;
+url1 = url.split(&apos;&amp;&apos;);    // [&quot;token=1231&quot;, &quot;a=1&quot;, &quot;b=2&quot;]
+
+var arr = {};
+
+url1.forEach(function(v, i, ele){
+  return arr[v.split(&apos;=&apos;)[0]]  = v.split(&apos;=&apos;)[1]
+})
+
+arr; //  Object {token: &quot;123&quot;, a: &quot;1&quot;, b: &quot;2&quot;}
+</code></pre><p>5.如何把get_element_by_id 改为驼峰大小写?</p>
+<pre><code>var str = &apos;get_element_by_id&apos;
+str = str.split(&apos;_&apos;);
+strStart = str[0]
+len = str.length;
+var arr = []
+for(var i=1;i&lt;len;i++) {
+    arr.push(str[i].charAt(0).toUpperCase()+str[i].slice(1))
+}
+arr = arr.join(&apos;&apos;)
+var str1 = strStart+arr
+console.log(str1)    //  getElementById
+</code></pre><p>6.基础类型</p>
+<pre><code>null == undefined ? true : false   //true   undefined是null衍生出来的
+
+var a; 1+a   // NaN
+
+var a; &apos;1&apos;+a   //1undefined
+</code></pre><p>7.toString()和valueOf()的作用和区别？</p>
+<pre><code>valueOf() 返回最适合该对象类型的原始值
+toString() 返回改对象的字符串形式
+
+[&quot;1&quot;].toString()  // &quot;1&quot;
+[&quot;1,2,3&quot;].toString()  // &quot;1,2,3&quot;
+
+[&quot;1&quot;].valueOf()  // [&quot;1&quot;]
+[&quot;1,2,3&quot;].valueOf()  // [&quot;1,2,3&quot;]
+</code></pre>
+            <div class="clearfix"></div>
+            <hr class="nogutter">
         </div>
-        
         <nav class="pagination" role="pagination">
-          
-          
-        </nav>
+    
+    <a class="pull-left" href="/2018/03/06/跨域问题/" style="float: left;">
+        ← 跨域问题
+    </a>
+    
+    
+</nav>
+
+        <div class="duoshuo">
+
+
+</div>
     </div>
 </section>
-<section id="statement">
-    <div class="container text-center wow fadeInUp" data-wow-delay="0.5s">
-        <div class="row">
-            <p>虽然还没想好写点什么，但是总觉得这里放句话比较和谐。</p>
-        </div>
-    </div>
-</section>
-<!-- ============================ END Content =========================== -->
+
 
       
 <!-- ============================ Footer =========================== -->
