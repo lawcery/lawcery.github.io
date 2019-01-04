@@ -17,7 +17,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>Archives: 2018/3 | Lawcery</title>
+  <title>跨域问题 | Lawcery</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -59,7 +59,7 @@
 </head>
 
 <!--
-<body class="home-template">
+<body class="post-template">
 -->
 <body id="index" class="lightnav animsition">
 
@@ -158,69 +158,54 @@
         <!-- ============================ Header & Logo bar =========================== -->
 
 
-      <!-- ============================ Hero Image =========================== -->
-
-<section id="hero" class="scrollme">
-    <div class="container-fluid element-img" style="background: url(/img/bgOnly.jpg) no-repeat center center fixed;background-size: cover">
-        <div class="row">
-            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 vertical-align cover boost text-center">
-                <div class="center-me animateme" data-when="exit" data-from="0" data-to="0.6" data-opacity="0" data-translatey="100">
-                    <div>
-                        
-                        <h2><p style="color:#fff">Every day that never dances is a failure to live up to.</p></h2>
-                        <p></p>
-                        
-                        <h2></h2>
-                        <p><p style="color:#fff">每一个不曾起舞的日子都是对生命的辜负。</p></p>
-                        
-
-                    </div>
-                </div>
-            </div>
-            <!-- // .col-md-12 -->
-        </div>
-        <div class="herofade beige-dk"></div>
-    </div>
-</section>
-
-<!-- Height spacing helper -->
-<div class="heightblock"></div>
-<!-- // End height spacing helper -->
-
-<!-- ============================ END Hero Image =========================== -->
-
-
-
-
-<section id="services">
+      
+<section id="intro">
     <div class="container">
-        <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-                <div class="row boxes">
-                    
-                    
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/2018/03/15/lawcery1/">css面试总结</a></h4>
-                            
-                            <p><time datetime="2018-03-15T01:49:16.000Z"><a href="/2018/03/15/lawcery1/">2018-03-15</a></time></p>
-                        </div>
-                    
-                </div>
-            </div>    
+        <div class="row col-md-offset-2">
+            <div class="col-md-8">
+    			<span class="post-meta">
+      <time datetime="2017-12-06T11:26:10.000Z" itemprop="datePublished">
+          2017-12-06
+      </time>
+    
+</span>
+                <h1>跨域问题</h1>
+            </div>
         </div>
-    </div>
-</section> 
+        <div class="col-md-8 col-md-offset-2">
+      		<p>在开发过程中，发请求携带cookie跨域的问题，我用的fetch请求，总结如下：<br>    1.携带cookie<br>    2.跨域</p>
+<pre><code>前端设置 credentials=&quot;include&quot;（允许跨域和携带cookie）;
+后端设置如下：
+    // 先获取请求来源origin, 给Access-Control-Allow-Origin动态赋值
+    response.setHeader(&apos;Access-Control-Allow-Origin&apos;, origin)
 
-<section id="statement">
-    <div class="container text-center wow fadeInUp" data-wow-delay="0.5s">
-        <div class="row">
-            <p>虽然还没想好写点什么，但是总觉得这里放句话比较和谐。</p>
+    (之前也看了好多文章说Access-Control-Allow-Origin值改为true,或者以逗号、空格等隔开填写多个域名/IP，结果试了都不可以
+        Access-Control-Allow-Origin是不可以设置多个值的，为了方便还是可以动态获取。)
+</code></pre>
+            <div class="clearfix"></div>
+            <hr class="nogutter">
         </div>
+        <nav class="pagination" role="pagination">
+    
+    <a class="pull-left" href="/2018/03/15/lawcery1/" style="float: left;">
+        ← css面试总结
+    </a>
+    
+    
+    <a class="pull-right" href="/2017/03/06/随笔1/">
+        随笔1 →
+    </a>
+    
+</nav>
+
+        <div class="duoshuo">
+
+
+</div>
     </div>
 </section>
+
+
       
 <!-- ============================ Footer =========================== -->
 
